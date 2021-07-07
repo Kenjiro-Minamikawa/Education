@@ -6,7 +6,7 @@ typedef struct Information{
     double weight;
     int grade;
 } Im;
-
+//アロー演算子
 void set_info(struct Information* hoge){
     printf("Let's input your Information!\n");
     printf("    Age : ");

@@ -6,7 +6,7 @@ typedef struct Information{
     double weight;
     int grade;
 } Im;
-
+//構造体のアドレス渡しの関数宣言
 void set_info(struct Information* hoge){
     printf("Let's input your Information!\n");
     printf("    Age : ");
@@ -18,7 +18,7 @@ void set_info(struct Information* hoge){
     printf("  Grade : ");
     scanf("%d", &(*hoge).grade);
 }
-
+//こちらは値渡し
 void show_info(struct Information hoge){
     printf("I'm gonna show Information of Mr.%s\n", hoge.name);
     printf("------------------------\n");
